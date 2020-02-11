@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29609.76
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{9F772645-4C21-4983-A8AB-CEDD42574C72}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{C04CDBD7-9EDB-4DE8-A061-D19978FDB6CC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "VehicleManagement", "VehicleManagement", "{F6F29D2C-A163-4131-A42F-07C5DCC70BBA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PitStop.VehicleManagement.WebUI", "src\VehicleManagement\PitStop.VehicleManagement.WebUI\PitStop.VehicleManagement.WebUI.csproj", "{FFC9FA2A-977E-407A-9699-E6D2F3BDB1A3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FFC9FA2A-977E-407A-9699-E6D2F3BDB1A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFC9FA2A-977E-407A-9699-E6D2F3BDB1A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFC9FA2A-977E-407A-9699-E6D2F3BDB1A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFC9FA2A-977E-407A-9699-E6D2F3BDB1A3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F6F29D2C-A163-4131-A42F-07C5DCC70BBA} = {9F772645-4C21-4983-A8AB-CEDD42574C72}
+		{FFC9FA2A-977E-407A-9699-E6D2F3BDB1A3} = {F6F29D2C-A163-4131-A42F-07C5DCC70BBA}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8DA40F20-35DB-4117-8F9A-F747D4F6B847}
+	EndGlobalSection
+EndGlobal
