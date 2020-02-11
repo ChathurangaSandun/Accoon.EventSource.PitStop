@@ -1,4 +1,4 @@
-# Accoon.EventSource.Courses
+# Accoon.EventSource.Pitstop
 
 ## Rodemap
 
