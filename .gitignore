@@ -1,0 +1,13 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Accoon.EventSource.PitStop/.vs/Accoon.EventSource.PitStop/v16
+/Accoon.EventSource.PitStop/src/VehicleManagement/PitStop.VehicleManagement.Application/obj
+/Accoon.EventSource.PitStop/src/VehicleManagement/PitStop.VehicleManagement.Domain/obj
+/Accoon.EventSource.PitStop/src/VehicleManagement/PitStop.VehicleManagement.Infrastructure/obj
+/Accoon.EventSource.PitStop/src/VehicleManagement/PitStop.VehicleManagement.Api/bin/Debug/netcoreapp3.1
+/Accoon.EventSource.PitStop/src/VehicleManagement/PitStop.VehicleManagement.Api/obj
+/Accoon.EventSource.PitStop/src/VehicleManagement/PitStop.VehicleManagement.Application/bin/Debug/netcoreapp3.1
+/Accoon.EventSource.PitStop/src/VehicleManagement/PitStop.VehicleManagement.Domain/bin/Debug/netcoreapp3.1
+/Accoon.EventSource.PitStop/src/VehicleManagement/PitStop.VehicleManagement.Infrastructure/bin/Debug/netcoreapp3.1

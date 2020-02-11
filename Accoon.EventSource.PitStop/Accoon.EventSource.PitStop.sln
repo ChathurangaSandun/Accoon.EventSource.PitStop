@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29609.76
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{9F772645-4C21-4983-A8AB-CEDD42574C72}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{C04CDBD7-9EDB-4DE8-A061-D19978FDB6CC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "VehicleManagement", "VehicleManagement", "{F6F29D2C-A163-4131-A42F-07C5DCC70BBA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PitStop.VehicleManagement.Application", "src\VehicleManagement\PitStop.VehicleManagement.Application\PitStop.VehicleManagement.Application.csproj", "{2B0E79F3-4A75-476C-939D-D34A5F194C8C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PitStop.VehicleManagement.Domain", "src\VehicleManagement\PitStop.VehicleManagement.Domain\PitStop.VehicleManagement.Domain.csproj", "{FCE06597-6F63-43E5-A9F4-50DF41F37B77}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PitStop.VehicleManagement.Infrastructure", "src\VehicleManagement\PitStop.VehicleManagement.Infrastructure\PitStop.VehicleManagement.Infrastructure.csproj", "{A09FD4CB-0FA9-469C-8595-F07257751E6B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PitStop.VehicleManagement.Api", "src\VehicleManagement\PitStop.VehicleManagement.Api\PitStop.VehicleManagement.Api.csproj", "{5E0DDE5F-1F77-4C90-9834-B4052CEA2619}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2B0E79F3-4A75-476C-939D-D34A5F194C8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B0E79F3-4A75-476C-939D-D34A5F194C8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B0E79F3-4A75-476C-939D-D34A5F194C8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B0E79F3-4A75-476C-939D-D34A5F194C8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCE06597-6F63-43E5-A9F4-50DF41F37B77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCE06597-6F63-43E5-A9F4-50DF41F37B77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCE06597-6F63-43E5-A9F4-50DF41F37B77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCE06597-6F63-43E5-A9F4-50DF41F37B77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A09FD4CB-0FA9-469C-8595-F07257751E6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A09FD4CB-0FA9-469C-8595-F07257751E6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A09FD4CB-0FA9-469C-8595-F07257751E6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A09FD4CB-0FA9-469C-8595-F07257751E6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E0DDE5F-1F77-4C90-9834-B4052CEA2619}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E0DDE5F-1F77-4C90-9834-B4052CEA2619}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E0DDE5F-1F77-4C90-9834-B4052CEA2619}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E0DDE5F-1F77-4C90-9834-B4052CEA2619}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F6F29D2C-A163-4131-A42F-07C5DCC70BBA} = {9F772645-4C21-4983-A8AB-CEDD42574C72}
+		{2B0E79F3-4A75-476C-939D-D34A5F194C8C} = {F6F29D2C-A163-4131-A42F-07C5DCC70BBA}
+		{FCE06597-6F63-43E5-A9F4-50DF41F37B77} = {F6F29D2C-A163-4131-A42F-07C5DCC70BBA}
+		{A09FD4CB-0FA9-469C-8595-F07257751E6B} = {F6F29D2C-A163-4131-A42F-07C5DCC70BBA}
+		{5E0DDE5F-1F77-4C90-9834-B4052CEA2619} = {F6F29D2C-A163-4131-A42F-07C5DCC70BBA}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8DA40F20-35DB-4117-8F9A-F747D4F6B847}
+	EndGlobalSection
+EndGlobal
