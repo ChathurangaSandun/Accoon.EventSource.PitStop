@@ -3,3 +3,6 @@
 ################################################################################
 
 /Accoon.EventSource.PitStop/.vs/Accoon.EventSource.PitStop/v16
+/Accoon.EventSource.PitStop/src/VehicleManagement/PitStop.VehicleManagement.Application/obj
+/Accoon.EventSource.PitStop/src/VehicleManagement/PitStop.VehicleManagement.Domain/obj
+/Accoon.EventSource.PitStop/src/VehicleManagement/PitStop.VehicleManagement.Infrastructure/obj
