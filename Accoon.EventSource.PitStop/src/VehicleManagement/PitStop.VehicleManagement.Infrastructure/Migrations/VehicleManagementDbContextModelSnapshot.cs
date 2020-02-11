@@ -21,8 +21,10 @@ namespace PitStop.VehicleManagement.Infrastructure.Migrations
 
             modelBuilder.Entity("PitStop.VehicleManagement.Domain.Entities.Vehicle", b =>
                 {
-                    b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("Brand")
                         .IsRequired()

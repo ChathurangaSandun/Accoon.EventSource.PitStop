@@ -7,7 +7,7 @@ namespace PitStop.VehicleManagement.Domain.Entities
 {
     public class Vehicle : AuditableEntity
     {
-        public string Id { get; set; }
+        public long Id { get; set; }
         public string LicenseNumber { get; set; }
         public string Brand { get; set; }
         public string Type { get; set; }

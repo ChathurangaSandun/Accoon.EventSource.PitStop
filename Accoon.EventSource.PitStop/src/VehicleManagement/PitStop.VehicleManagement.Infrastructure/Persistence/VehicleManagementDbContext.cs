@@ -52,3 +52,5 @@ namespace PitStop.VehicleManagement.Infrastructure.Persistence
 
     }
 }
+
+//Add-Migration changeid -Project PitStop.VehicleManagement.Infrastructure -StartupProject PitStop.VehicleManagement.Api

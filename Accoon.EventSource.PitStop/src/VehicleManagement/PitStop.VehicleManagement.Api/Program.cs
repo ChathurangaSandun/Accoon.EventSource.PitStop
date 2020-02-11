@@ -37,8 +37,7 @@ namespace PitStop.VehicleManagement.Api
                     logger.LogError(ex, "An error occurred while migrating or seeding the database.");
                 }
             }
-            
-            
+
             host.Run();
         }
 

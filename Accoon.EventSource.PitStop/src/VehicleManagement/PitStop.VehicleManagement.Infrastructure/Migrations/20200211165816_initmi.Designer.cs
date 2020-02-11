@@ -10,8 +10,8 @@ using PitStop.VehicleManagement.Infrastructure.Persistence;
 namespace PitStop.VehicleManagement.Infrastructure.Migrations
 {
     [DbContext(typeof(VehicleManagementDbContext))]
-    [Migration("20200211145521_InitMigration")]
-    partial class InitMigration
+    [Migration("20200211165816_initmi")]
+    partial class initmi
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -23,8 +23,10 @@ namespace PitStop.VehicleManagement.Infrastructure.Migrations
 
             modelBuilder.Entity("PitStop.VehicleManagement.Domain.Entities.Vehicle", b =>
                 {
-                    b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("Brand")
                         .IsRequired()
