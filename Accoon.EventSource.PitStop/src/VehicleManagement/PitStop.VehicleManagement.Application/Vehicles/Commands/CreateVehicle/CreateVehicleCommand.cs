@@ -32,7 +32,8 @@ namespace PitStop.VehicleManagement.Application.Vehicles.Commands.CreateVehicle
                     LicenseNumber = request.LicenseNumber,
                     Brand = request.Brand,
                     Type = request.Type
-                } ;
+                };
+
                 _context.Vehicles.Add(vehicle);
                 await _context.SaveChangesAsync(cancellationToken);
                 return vehicle.Id;

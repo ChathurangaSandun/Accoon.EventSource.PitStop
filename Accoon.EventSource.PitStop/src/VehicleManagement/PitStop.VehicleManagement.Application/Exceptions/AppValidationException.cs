@@ -6,16 +6,18 @@ using System.Text;
 
 namespace PitStop.VehicleManagement.Application.Exceptions
 {
-
-    public class ValidationException : Exception
+    /// <summary>
+    /// Convert all validaiton errors from FluentValidation to this object
+    /// </summary>
+    public class AppValidationException : Exception
     {
-        public ValidationException()
+        public AppValidationException()
             : base("One or more validation failures have occurred.")
         {
             Failures = new Dictionary<string, string[]>();
         }
 
-        public ValidationException(IEnumerable<ValidationFailure> failures)
+        public AppValidationException(IEnumerable<ValidationFailure> failures)
             : this()
         {
             var failureGroups = failures

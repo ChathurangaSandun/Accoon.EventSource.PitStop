@@ -30,10 +30,18 @@ namespace PitStop.VehicleManagement.Api
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers().
-                AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<IVehicleManagementDbContext>());
             services.AddInfrastructure(Configuration);
             services.AddApplication(Configuration);
+            services.AddControllers()
+                    .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<IVehicleManagementDbContext>())
+                    .AddNewtonsoftJson();
+            services.AddHttpContextAccessor();
+
+            // ***** MUST Customise default API behaviour
+            services.Configure<ApiBehaviorOptions>(options =>
+            {
+                options.SuppressModelStateInvalidFilter = true;
+            });
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

@@ -10,6 +10,9 @@ using System.Threading.Tasks;
 
 namespace PitStop.VehicleManagement.Api.Common
 {
+    /// <summary>
+    /// This use to handle all exceptions
+    /// </summary>
     public class CustomExceptionHandlerMiddleware
     {
         private readonly RequestDelegate _next;
@@ -34,12 +37,10 @@ namespace PitStop.VehicleManagement.Api.Common
         private Task HandleExceptionAsync(HttpContext context, Exception exception)
         {
             var code = HttpStatusCode.InternalServerError;
-
             var result = string.Empty;
-
             switch (exception)
             {
-                case ValidationException validationException:
+                case AppValidationException validationException:
                     code = HttpStatusCode.BadRequest;
                     result = JsonConvert.SerializeObject(validationException.Failures);
                     break;
@@ -50,7 +51,6 @@ namespace PitStop.VehicleManagement.Api.Common
 
             context.Response.ContentType = "application/json";
             context.Response.StatusCode = (int)code;
-
             if (string.IsNullOrEmpty(result))
             {
                 result = JsonConvert.SerializeObject(new { error = exception.Message });

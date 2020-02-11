@@ -1,5 +1,6 @@
 ﻿using FluentValidation;
 using MediatR;
+using PitStop.VehicleManagement.Application.Exceptions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +10,11 @@ using System.Threading.Tasks;
 
 namespace PitStop.VehicleManagement.Application.Behaviours
 {
+    /// <summary>
+    /// This is use to catch all validaiton errors from fluentvalidation. This is catch in the runtime pipeline
+    /// </summary>
+    /// <typeparam name="TRequest"></typeparam>
+    /// <typeparam name="TResponse"></typeparam>
     public class RequestValidationBehavior<TRequest, TResponse> : IPipelineBehavior<TRequest, TResponse>
        where TRequest : IRequest<TResponse>
     {
@@ -31,7 +37,7 @@ namespace PitStop.VehicleManagement.Application.Behaviours
 
             if (failures.Count != 0)
             {
-                throw new ValidationException(failures);
+                throw new AppValidationException(failures);
             }
 
             return next();
